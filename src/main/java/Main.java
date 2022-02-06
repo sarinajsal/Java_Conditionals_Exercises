@@ -26,7 +26,7 @@ public class Main {
 
         String string = new String("hi");
         String stringTwo = new String("hi");
-        if (string.equals(stringTwo) ){
+        if (string.equals(stringTwo)) {
             System.out.println("string is " + string + " stringTwo is also " + stringTwo);
         }
 
@@ -37,10 +37,9 @@ public class Main {
 
         int n1 = 1;
         int n2 = 1;
-        if (n1 == n2){
+        if (n1 == n2) {
             System.out.println("n1 and n2 are equal");
-        }
-        else {
+        } else {
             System.out.println("n1 and n2 are not equal");
         }
         // create three `int` variables. Assign them values with the first value sitting between the other two
@@ -53,22 +52,42 @@ public class Main {
         int num1 = 10;
         int num2 = 11;
         int num3 = 9;
-        if (num1>num2 || num1<num2){
+        if (num1 > num2 || num1 < num2) {
             System.out.println("condition met");
-        }
-        else {
+        } else {
             System.out.println("condition not met");
         }
         // create a String variable and assign it a value
         // create an `if` statement which grabs the first letter of your word and compares it against a Character value
         // print something to the console if the condition is met
 
-        String myString = "Hello world";
-        char h = 'h';
-        if (Character.toLowerCase(myString.charAt(0)) == h);
-        System.out.println("condition met");
+//        String myString = "Hello world";
+//        char h = 'h';
+//        if (Character.toLowerCase(myString.charAt(0)) == h) ;
+//        System.out.println("condition met");
 
+
+// create a String variable and assign it a value
+        // create a `for` loop which wraps around your answer from Question 7
+        // modify your `if` statement to check the character at each index
+        // Hint: use your internal, incrementing value of your `for` loop within the `.charAt()` method
+        // print something to the console if the condition is met
+
+        String myString = "Hello world";
+        Character charChecking = 'o';
+
+        for (int i = 0; i < myString.length(); i++) {
+
+            if (Character.toLowerCase(myString.charAt(i)) == charChecking) {
+                System.out.println("condition mets");
+                break;
+
+
+            }
+
+
+        }
     }
-    
 }
+
 
